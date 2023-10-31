@@ -26,6 +26,8 @@ $backColor: #f9d093;
     }
 
     ul {
+      display: flex;
+      justify-content: center;
       li {
         list-style: none;
         .navlink {

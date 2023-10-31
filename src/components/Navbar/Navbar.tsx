@@ -13,16 +13,24 @@ function Navbar() {
             <NavLink className="navlink" to="/">
               Accueil
             </NavLink>
+          </li>
+          <li>
             <NavLink className="navlink" to="/decouverte">
               Découvir
             </NavLink>
+          </li>
+          <li>
             <NavLink className="navlink" to="/apropos">
               A propos
             </NavLink>
           </li>
         </ul>
         <div className="connexion">
-          <small className="cnx">connexion</small>
+          <small className="cnx">
+          <NavLink className="navlink" to="/login">
+            connexion
+            </NavLink>
+            </small>
           <NavLink className="login" to="/connexion">
             <AiOutlineLogin />
           </NavLink>{" "}

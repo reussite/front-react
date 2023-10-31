@@ -9,15 +9,11 @@ const HomePage = ()=> {
 
   return (
     <div className="home">
-      {/* <img
-        className={`home ${fadeIn ? "fade-in" : "fade-out"}`}
-        src={curentImage}
-        alt="student"
-        title="student"
-      /> */}
-      
+      <div className="content">
+        Engégistrement des Etudiants et les 
+      </div>
     </div>
-  );
+  );  
 }
 
 export default HomePage;
