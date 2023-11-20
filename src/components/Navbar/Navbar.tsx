@@ -27,13 +27,11 @@ function Navbar() {
         </ul>
         <div className="connexion">
           <small className="cnx">
-          <NavLink className="navlink" to="/login">
-            connexion
+            <NavLink className="navlink" to="/login">
+              connexion
             </NavLink>
-            </small>
-          <NavLink className="login" to="/connexion">
-            <AiOutlineLogin />
-          </NavLink>{" "}
+          </small>
+              <AiOutlineLogin className="icon-connexion" />
         </div>
       </div>
     </div>

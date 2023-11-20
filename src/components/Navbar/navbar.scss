@@ -1,4 +1,4 @@
-$backColor: #f9d093;
+ $backColor: #f9d093;
 
 .navbar {
   background-color: $backColor;
@@ -38,20 +38,18 @@ $backColor: #f9d093;
       }
     }
     .connexion {
-      margin-top: 10px;
+      margin-top: 16px;
+      font-size: 25px;
       .cnx {
         cursor: pointer;
-        position: absolute;
-        right: 70px;
-        top: 35px;
-        font-size: 15px !important;
-        margin-top: 10px !important;
+        
+        margin-top: 10px ;
         color: blue;
+        padding: 10px;
       }
-      .login {
-        margin-top: 20px;
-        font-size: 50px;
-        animation: light 1s ease infinite;
+      .icon-connexion{
+       margin:-6px;
+      animation: light 1s ease infinite;
       }
       @keyframes light{
         0%{
@@ -61,11 +59,10 @@ $backColor: #f9d093;
           color: blue
         }
       }
-
-
     }
     .connexion :hover {
       color: red;
     }
   }
 }
+ 

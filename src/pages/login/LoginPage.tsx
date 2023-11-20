@@ -1,32 +1,36 @@
 import React from "react";
-import "./login.scss"
+import { Link } from "react-router-dom";
+import "./login.scss";
+import bannerConnexion from "../../images/login.jpg";
 function LoginPage() {
   return (
-    <div className="login">
-      <div className="content">
-        <div className="card-left">
-          <h3>Hello</h3>
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, fugit.</span>
-        </div>
-        <div className="card-right">
-          <h3>Sign In</h3>
-          <div className="social-media"></div>
-          <div className="input-form">
-            <input
-              type="emal"
-              name="email"
-              placeholder="Enter your email address"
-              id=""
-            />
-            <input 
-              type="password" 
-              name="email" 
-              id="" 
-            />
+    <>
+      <div className="login">
+        <div className="content">
+          <div className="banner-connextion">
+            <img src={bannerConnexion} alt="" />
+          </div>
+          <div className="formulaire">
+            <form action="">
+              <h3>Welcome back</h3>
+              <div className="input-data">
+                <input type="text" name="name" id=""  placeholder="Email"/>
+                <input type="password" name="password" id="" />
+              </div>
+              <small className="forgot-password">
+                <Link to="/" className="forgot-password-link">Forgot Password?</Link>
+              </small>
+              <button type="submit" className="submission">Login in</button>
+              <small>
+                Don't have an account? <Link to="/">Sing up</Link>{" "}
+              </small>
+              <button type="submit" className="submission-apple">Login with Apple</button>
+              <button type="submit" className="submission-google">Login with Google</button>
+            </form>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
